@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-api
-        image: hello-api:v1
+        image: hello-api:v2
         imagePullPolicy: Never
         ports:
         - containerPort: 8000
