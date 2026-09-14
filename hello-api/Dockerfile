@@ -24,6 +24,9 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Copy application code
 COPY main.py .
 
+# Pin perl-base to patched version (CVE-2026-13221 etc.)
+RUN apt-get update && apt-get install -y --only-upgrade perl-base && rm -rf /var/lib/apt/lists/*
+
 # Create a non-root user
 RUN adduser --disabled-password appuser
 
