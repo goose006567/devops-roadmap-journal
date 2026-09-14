@@ -7,3 +7,5 @@
 - [Day 3 - Docker & Containers](day3.md)
 - [Day 4 - Kubernetes (Minikube)](day4.md)
 - [Day 5 - CI/CD with GitHub Actions](day5.md)
+- [Day 6 - IaC with Terraform](day6.md)
+- [Day 7 - Monitoring & Observability](day7.md)
