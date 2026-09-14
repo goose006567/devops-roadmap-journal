@@ -2,3 +2,8 @@
 __pycache__/
 .venv/
 *.log
+
+# Terraform state files (may contain secrets, never commit)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
