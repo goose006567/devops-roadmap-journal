@@ -24,5 +24,14 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Copy application code
 COPY main.py .
 
+# Create a non-root user
+RUN adduser --disabled-password appuser
+
+# Let the app user own the app directory
+RUN chown -R appuser /app
+
+# Switch to non-root
+USER appuser
+
 # Run the app
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
