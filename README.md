@@ -10,3 +10,4 @@
 - [Day 6 - IaC with Terraform](day6.md)
 - [Day 7 - Monitoring & Observability](day7.md)
 - [Day 8 - Security & DevSecOps](day8.md)
+- [Day 9 - AI/ML Deployments](day9.md)
